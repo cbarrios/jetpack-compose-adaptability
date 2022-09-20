@@ -47,6 +47,7 @@ import androidx.compose.material3.NavigationRail
 import androidx.compose.material3.NavigationRailItem
 import androidx.compose.material3.Text
 import androidx.compose.material3.rememberDrawerState
+import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Alignment
@@ -59,7 +60,10 @@ import com.example.reply.R
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ReplyApp(replyHomeUIState: ReplyHomeUIState) {
+fun ReplyApp(
+    replyHomeUIState: ReplyHomeUIState,
+    windowSize: WindowWidthSizeClass
+) {
     // You will add navigation info here
     ReplyNavigationWrapperUI(replyHomeUIState)
 }
