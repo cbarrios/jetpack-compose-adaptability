@@ -57,12 +57,14 @@ import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.reply.R
+import com.example.reply.ui.utils.DevicePosture
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ReplyApp(
     replyHomeUIState: ReplyHomeUIState,
-    windowSize: WindowWidthSizeClass
+    windowSize: WindowWidthSizeClass,
+    foldingDevicePosture: DevicePosture
 ) {
     // You will add navigation info here
     ReplyNavigationWrapperUI(replyHomeUIState)
